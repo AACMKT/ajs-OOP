@@ -9,11 +9,11 @@ export default class Character {
 
     if (characters.includes(type)) {
       this.type = type;
-      this.health = 100;
-      this.level = 1;
     } else {
       throw new Error('Unsupported class of adventure!');
     }
+    this.health = 100;
+    this.level = 1;
   }
 
   levelUp() {
