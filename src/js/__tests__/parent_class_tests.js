@@ -23,6 +23,6 @@ test('parent class Character throwing error (adventure type in not correct) banc
 test('parent class Character sucesfull creation', () => {
   const char = new Character('Aragorn', 'Swordsman');
   expect(char).toEqual({
-    attack: 40, defence: 10, health: 100, level: 1, name: 'Aragorn', type: 'Swordsman',
+    health: 100, level: 1, name: 'Aragorn', type: 'Swordsman',
   });
 });

@@ -5,18 +5,9 @@ export default class Character {
     } else {
       throw new Error('Name has to be from 2 to 10 characters lenght and contains at least one letter');
     }
-    const characters = {
-      Bowman: [25, 25],
-      Swordsman: [40, 10],
-      Magician: [10, 40],
-      Undead: [25, 25],
-      Zombie: [40, 10],
-      Daemon: [10, 40],
-    };
+    const characters = ['Bowman', 'Swordsman', 'Magician', 'Undead', 'Zombie', 'Daemon'];
 
-    if (Object.keys(characters).includes(type)) {
-      this.attack = characters[type][0];
-      this.defence = characters[type][1];
+    if (characters.includes(type)) {
       this.type = type;
       this.health = 100;
       this.level = 1;
